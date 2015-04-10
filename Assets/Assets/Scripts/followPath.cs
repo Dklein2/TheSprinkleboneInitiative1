@@ -59,4 +59,26 @@ public class followPath : MonoBehaviour
 		
 		}
 	}
+
+	void OnTriggerEnter2D(Collider2D other) 
+	{
+		if (other.gameObject.tag == "Player")
+		{
+			other.transform.parent = transform;
+			Debug.Log ("Player is child");
+		}
+		else
+		{
+			Debug.Log("error");
+		}
+	}
+	void OnTriggerExit2D(Collider2D other) 
+	{
+		if (other.gameObject.tag == "Player")
+		{
+			other.transform.parent = null;
+			Debug.Log("player is not child");
+		}
+	}
+
 }
