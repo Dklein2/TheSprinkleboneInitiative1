@@ -14,7 +14,7 @@ namespace UnityStandardAssets._2D
 		public bool doublejump = false;
 		public bool test = false;
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
-        const float k_GroundedRadius = 2.03f; // Radius of the overlap circle to determine if grounded
+        const float k_GroundedRadius = 1.50f; // Radius of the overlap circle to determine if grounded
         private bool m_Grounded;            // Whether or not the player is grounded.
         private Transform m_CeilingCheck;   // A position marking where to check for ceilings
         const float k_CeilingRadius = 1.23f; // Radius of the overlap circle to determine if the player can stand up
@@ -24,6 +24,7 @@ namespace UnityStandardAssets._2D
 		public static PlatformerCharacter2D main;
 		public int currentCheckpoint = 0;
 		public int lives = 3;
+		public Vector3 groundedPos = new Vector3 (0,0,0);
 
 		//Collectibles
 		public int keyAmount =0;
@@ -60,6 +61,7 @@ namespace UnityStandardAssets._2D
             {
                 if (colliders[i].gameObject != gameObject)
                     m_Grounded = true;
+				groundedPos = (gameObject.transform.position);
             }
             m_Anim.SetBool("Ground", m_Grounded);
 
