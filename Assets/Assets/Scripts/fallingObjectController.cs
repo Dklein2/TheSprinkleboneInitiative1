@@ -17,13 +17,21 @@ public class fallingObjectController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find ("PlayerCharacter");
+		speed = Random.Range(8,18);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 		float step = speed * Time.deltaTime;
-		transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+		if (target != null)
+		{
+			transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+		}
+		else
+		{
+			Destroy(gameObject);
+		}
 	}
 	void OnTriggerEnter2D(Collider2D other)
 	{
@@ -32,14 +40,13 @@ public class fallingObjectController : MonoBehaviour {
 		{
 			Debug.Log ("hit target");
 			Destroy(other.gameObject);
-			Destroy(gameObject);
+			Destroy(gameObject.transform.parent.gameObject);
 			int randomXpos = Random.Range(-10,11);
 			Debug.Log(randomXpos);
 			Vector3 playerPos = PlatformerCharacter2D.main.groundedPos;
 			Vector3 spawnPos = new Vector3(randomXpos,0,0);
 			spawnPos = (playerPos + spawnPos);
-			GameObject newMeteor = (GameObject)Instantiate(Resources.Load("meteorStrike"),spawnPos, Quaternion.identity); 
-
+			GameObject newMeteor = (GameObject)Instantiate(Resources.Load("groundedCheck"),spawnPos, Quaternion.identity);
 		}
 		else if (other.gameObject.tag == "Player")
 		{

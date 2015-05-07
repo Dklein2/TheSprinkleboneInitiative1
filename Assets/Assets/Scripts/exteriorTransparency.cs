@@ -16,9 +16,13 @@ public class exteriorTransparency : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other) 
 	{
-		Color color = GetComponent<Renderer> ().material.color;
-		color.a = 0.0f;
-		GetComponent<Renderer> ().material.color = color;
+		if (other.gameObject.tag == "Player")
+		{
+			Color color = GetComponent<Renderer> ().material.color;
+			color.a = 0.0f;
+			GetComponent<Renderer> ().material.color = color;
+	
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D other) 

@@ -16,9 +16,13 @@ public class platformExplode : MonoBehaviour
 	
 	void OnTriggerEnter2D(Collider2D other) 
 	{
-		playerOn = true;
-		anim.SetBool("PlayerOn", playerOn);
-		StartCoroutine(DestroyPlatform());
+		if (other.gameObject.tag == "Player")
+		{
+
+			playerOn = true;
+			anim.SetBool("PlayerOn", playerOn);
+			StartCoroutine(DestroyPlatform());
+		}
 	}
 
 	IEnumerator DestroyPlatform()
