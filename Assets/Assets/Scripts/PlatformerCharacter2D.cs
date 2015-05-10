@@ -36,6 +36,11 @@ namespace UnityStandardAssets._2D
 		public bool permJumpBoots = false;
 		public bool gripGloves = false;
 		public bool hoverPack = false;
+		public bool wallJump;
+		const float wallJumpRadius = 0.5f;
+		[SerializeField] private LayerMask wallLayer; 
+
+		private Collider2D col;
 
 
 
@@ -47,6 +52,7 @@ namespace UnityStandardAssets._2D
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
 			main = this;
+			col = this.GetComponent<Collider2D>(); //ties the variable to your collider2D
         }
 
 
@@ -63,9 +69,16 @@ namespace UnityStandardAssets._2D
                     m_Grounded = true;
 				groundedPos = (gameObject.transform.position);
             }
-            m_Anim.SetBool("Ground", m_Grounded);
-
-            // Set the vertical animation
+			Collider2D[] wallCheck = Physics2D.OverlapCircleAll(m_GroundCheck.position, wallJumpRadius, wallLayer);
+			for (int i = 0; i < wallCheck.Length; i++)
+			{
+				if (wallCheck[i].gameObject != gameObject)
+					m_Grounded = true;
+				groundedPos = (gameObject.transform.position);
+			}
+			m_Anim.SetBool("Ground", m_Grounded);
+			
+			// Set the vertical animation
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
         }
 
@@ -119,6 +132,13 @@ namespace UnityStandardAssets._2D
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 				doublejump = false;
             }
+			if(wallJump && jump ==true)
+			{
+				wallJump = false;
+				//m_Anim.SetBool("Climbing", false);
+				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				doublejump = false;
+			}
         }
 
 
@@ -132,6 +152,8 @@ namespace UnityStandardAssets._2D
             theScale.x *= -1;
             transform.localScale = theScale;
         }
+
+
     }
 
 
