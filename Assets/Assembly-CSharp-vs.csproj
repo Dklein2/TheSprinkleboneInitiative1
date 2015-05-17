@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\move.cs" />
      <Compile Include="Assets\Scripts\movementController.cs" />
      <Compile Include="Assets\Scripts\pathDefinition.cs" />
+     <Compile Include="Assets\Scripts\pipToggle.cs" />
      <Compile Include="Assets\Scripts\platformExplode.cs" />
      <Compile Include="Assets\Scripts\respawnPlatform.cs" />
      <Compile Include="Assets\Scripts\timedDestroy.cs" />
