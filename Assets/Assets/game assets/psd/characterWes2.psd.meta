@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: 5c0d4d681ea908041a006e2f2ee2c654
+timeCreated: 1450495700
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wesHead
+    21300002: wesLHand
+    21300004: wesLshoulder
+    21300006: wesLFist
+    21300008: wesTorso
+    21300010: wesLArm
+    21300012: wesRShoulder
+    21300014: wesRLegTop
+    21300016: wesRLegBottom
+    21300018: wesLLegBottom
+    21300020: WesLLegTop
+    21300022: wesRArm
+    21300024: wesRHand
+    21300026: wesRFist
+    21300028: WesRFoot
+    21300030: WesLFoot
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: wesHead
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 577
+        width: 98
+        height: 125
+      alignment: 9
+      pivot: {x: 0.36371857, y: 0.072621584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.64442, y: 115.9223}
+        - {x: -35.64442, y: 98.9223}
+        - {x: -35.64442, y: 12.922302}
+        - {x: -10.644421, y: -9.077698}
+        - {x: 60.35558, y: -9.077698}
+        - {x: 62.35558, y: -7.0776978}
+        - {x: 62.35558, y: 115.9223}
+    - name: wesLHand
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 625
+        width: 66
+        height: 77
+      alignment: 9
+      pivot: {x: 0.13575698, y: 0.86424434}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.959961, y: 10.453186}
+        - {x: -8.959961, y: -45.546814}
+        - {x: 22.04004, y: -66.546814}
+        - {x: 57.04004, y: -66.546814}
+        - {x: 57.04004, y: -3.546814}
+        - {x: 16.04004, y: 10.453186}
+    - name: wesLshoulder
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 483
+        width: 76
+        height: 184
+      alignment: 9
+      pivot: {x: 0.5175729, y: 0.76130545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.33554, y: 43.9198}
+        - {x: -39.33554, y: 35.9198}
+        - {x: -39.33554, y: -126.0802}
+        - {x: -27.33554, y: -140.0802}
+        - {x: 8.664459, y: -140.0802}
+        - {x: 28.66446, y: -133.0802}
+        - {x: 36.66446, y: -48.0802}
+        - {x: 36.66446, y: 40.9198}
+        - {x: 34.66446, y: 43.9198}
+    - name: wesLFist
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 563
+        width: 55
+        height: 63
+      alignment: 9
+      pivot: {x: 0.18432285, y: 0.86038935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.137756, y: 8.795471}
+        - {x: -10.137756, y: -34.20453}
+        - {x: 1.8622437, y: -53.20453}
+        - {x: 4.8622437, y: -54.20453}
+        - {x: 44.862244, y: -54.20453}
+        - {x: 44.862244, y: -11.204529}
+        - {x: 26.862244, y: 8.795471}
+    - name: wesTorso
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 305
+        width: 126
+        height: 283
+      alignment: 9
+      pivot: {x: 0.48940036, y: 0.098860346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.664444, y: 255.02252}
+        - {x: -61.664444, y: 218.02252}
+        - {x: -61.664444, y: 133.02252}
+        - {x: -47.664444, y: 104.02252}
+        - {x: -61.664444, y: 53.022522}
+        - {x: -61.664444, y: 34.022522}
+        - {x: -46.664444, y: -19.977478}
+        - {x: -16.664444, y: -27.977478}
+        - {x: 64.335556, y: -27.977478}
+        - {x: 64.335556, y: 173.02252}
+        - {x: 24.335556, y: 255.02252}
+    - name: wesLArm
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 464
+        width: 93
+        height: 130
+      alignment: 9
+      pivot: {x: 0.18406136, y: 0.9006681}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.882294, y: 12.913147}
+        - {x: -13.117706, y: 12.913147}
+        - {x: -17.117706, y: 2.913147}
+        - {x: -17.117706, y: -43.086853}
+        - {x: 38.882294, y: -117.08685}
+        - {x: 55.882294, y: -117.08685}
+        - {x: 75.88229, y: -104.08685}
+        - {x: 75.88229, y: -67.08685}
+        - {x: 49.882294, y: 8.913147}
+    - name: wesRShoulder
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 345
+        width: 76
+        height: 183
+      alignment: 9
+      pivot: {x: 0.605439, y: 0.7846278}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.013367, y: 39.413116}
+        - {x: -46.013367, y: -143.58688}
+        - {x: -0.013366699, y: -143.58688}
+        - {x: 29.986633, y: -129.58688}
+        - {x: 29.986633, y: 29.413116}
+        - {x: 18.986633, y: 39.413116}
+    - name: wesRLegTop
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 89
+        width: 108
+        height: 207
+      alignment: 9
+      pivot: {x: 0.42580238, y: 0.848407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.986656, y: 31.37976}
+        - {x: -45.986656, y: 22.37976}
+        - {x: -45.986656, y: -83.62024}
+        - {x: -28.986656, y: -175.62024}
+        - {x: 60.013344, y: -175.62024}
+        - {x: 62.013344, y: -159.62024}
+        - {x: 62.013344, y: 30.37976}
+        - {x: 60.013344, y: 31.37976}
+    - name: wesRLegBottom
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 77
+        width: 78
+        height: 208
+      alignment: 9
+      pivot: {x: 0.6369805, y: 0.95588815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.68448, y: 9.175262}
+        - {x: -49.68448, y: -42.824738}
+        - {x: -49.68448, y: -176.82474}
+        - {x: -39.68448, y: -198.82474}
+        - {x: 18.315521, y: -198.82474}
+        - {x: 28.315521, y: -149.82474}
+        - {x: 28.315521, y: 9.175262}
+    - name: wesLLegBottom
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 119
+        width: 77
+        height: 209
+      alignment: 9
+      pivot: {x: 0.586725, y: 0.95370686}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.177826, y: 9.675262}
+        - {x: -45.177826, y: -19.324738}
+        - {x: -45.177826, y: -172.32474}
+        - {x: -39.177826, y: -199.32474}
+        - {x: 24.822174, y: -199.32474}
+        - {x: 31.822174, y: -150.32474}
+        - {x: 31.822174, y: 9.675262}
+    - name: WesLLegTop
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 155
+        width: 108
+        height: 208
+      alignment: 9
+      pivot: {x: 0.38870323, y: 0.821048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.97995, y: 37.222015}
+        - {x: -41.97995, y: -162.77798}
+        - {x: -40.97995, y: -170.77798}
+        - {x: 51.02005, y: -170.77798}
+        - {x: 66.02005, y: -124.777985}
+        - {x: 66.02005, y: 31.222015}
+        - {x: 42.02005, y: 37.222015}
+    - name: wesRArm
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 204
+        width: 93
+        height: 129
+      alignment: 9
+      pivot: {x: 0.19842201, y: 0.8934208}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.4532471, y: 13.748718}
+        - {x: -11.453247, y: 9.748718}
+        - {x: -18.453247, y: 5.7487183}
+        - {x: -18.453247, y: -31.251282}
+        - {x: 14.546753, y: -105.25128}
+        - {x: 27.546753, y: -115.25128}
+        - {x: 65.54675, y: -115.25128}
+        - {x: 74.54675, y: -107.25128}
+        - {x: 74.54675, y: -71.25128}
+        - {x: 36.546753, y: 13.748718}
+    - name: wesRHand
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 124
+        width: 94
+        height: 77
+      alignment: 9
+      pivot: {x: 0.40054387, y: 0.81220907}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.651123, y: 14.4599}
+        - {x: -11.651123, y: -27.5401}
+        - {x: -9.651123, y: -38.5401}
+        - {x: 23.348877, y: -62.5401}
+        - {x: 56.348877, y: -62.5401}
+        - {x: 56.348877, y: 2.4599}
+        - {x: 23.348877, y: 14.4599}
+      - - {x: -37.651123, y: -49.5401}
+        - {x: -37.651123, y: -57.5401}
+        - {x: -34.651123, y: -57.5401}
+        - {x: -32.651123, y: -55.5401}
+        - {x: -32.651123, y: -52.5401}
+        - {x: -35.651123, y: -49.5401}
+    - name: wesRFist
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 138
+        width: 55
+        height: 63
+      alignment: 9
+      pivot: {x: 0.23288797, y: 0.7967912}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.191162, y: 12.802155}
+        - {x: -12.808838, y: 12.802155}
+        - {x: -12.808838, y: -40.197845}
+        - {x: 3.191162, y: -50.197845}
+        - {x: 42.191162, y: -50.197845}
+        - {x: 42.191162, y: 0.80215454}
+        - {x: 34.191162, y: 7.8021545}
+    - name: WesRFoot
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 20
+        width: 106
+        height: 50
+      alignment: 9
+      pivot: {x: 0.23540828, y: 0.90066755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.046722, y: 4.9666214}
+        - {x: -23.953278, y: 4.9666214}
+        - {x: -24.953278, y: 0.9666214}
+        - {x: -24.953278, y: -45.03338}
+        - {x: 77.04672, y: -45.03338}
+        - {x: 81.04672, y: -39.03338}
+        - {x: 81.04672, y: -18.033379}
+        - {x: 79.04672, y: -12.033379}
+    - name: WesLFoot
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 32
+        width: 110
+        height: 50
+      alignment: 9
+      pivot: {x: 0.26931292, y: 0.8739577}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44.37558, y: 6.3021164}
+        - {x: -19.62442, y: 6.3021164}
+        - {x: -29.62442, y: 3.3021164}
+        - {x: -29.62442, y: -43.697884}
+        - {x: 78.37558, y: -43.697884}
+        - {x: 80.37558, y: -42.697884}
+        - {x: 80.37558, y: -12.697884}
+        - {x: 78.37558, y: -4.6978836}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
